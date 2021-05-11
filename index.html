@@ -93,7 +93,7 @@ turbine_eff=0.9;
 vol_out=max_flow*24*60*60;
 vol_in=flow_in(1)*24*60*60;
 flow_out(1)=max_flow;
-<span class="comment">%on day 1, since the in-flow rate of 21 &gt; out-flow of 6, we can ignore the volume change.</span>
+<span class="comment">%on day 1, since the in-flow rate of 21m^3/s &gt; out-flow of 6m^3/s, we can ignore the volume change.</span>
 volume(1)=full_vol;
 power(1)=max_flow*1000*9.81*height(1)*turbine_eff;
 <span class="comment">%Calculation of the power output for the rest of the year:</span>
@@ -139,7 +139,7 @@ legend(<span class="string">"River flow"</span>,<span class="string">"Flow throu
 
 <span class="comment">%Plot of daily flow through the turbine and power output of the dam</span>
 figure()
-title(<span class="string">"Daily power output (MW) and water flow rate (m3/s) through turbine:"</span>,<span class="keyword">...</span>
+title(<span class="string">"Daily power output (MW) and water flow rate (m^3/s) through turbine:"</span>,<span class="keyword">...</span>
      <span class="string">"(flow rates in seconds used as average for whole day)"</span>)
 grid <span class="string">on</span>
 xlabel(<span class="string">"Day"</span>)
@@ -185,7 +185,7 @@ turbine_eff=0.9;
 vol_out=max_flow*24*60*60;
 vol_in=flow_in(1)*24*60*60;
 flow_out(1)=max_flow;
-%on day 1, since the in-flow rate of 21 > out-flow of 6, we can ignore the volume change.
+%on day 1, since the in-flow rate of 21m^3/s > out-flow of 6m^3/s, we can ignore the volume change.
 volume(1)=full_vol;
 power(1)=max_flow*1000*9.81*height(1)*turbine_eff;
 %Calculation of the power output for the rest of the year:
@@ -231,7 +231,7 @@ legend("River flow","Flow through turbine","Location", "Best")
 
 %Plot of daily flow through the turbine and power output of the dam
 figure()
-title("Daily power output (MW) and water flow rate (m3/s) through turbine:",...
+title("Daily power output (MW) and water flow rate (m^3/s) through turbine:",...
      "(flow rates in seconds used as average for whole day)")
 grid on
 xlabel("Day")
